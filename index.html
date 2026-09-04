@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mind Games</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            🧠 Mind Games
+        </div>
+
+        <button class="surprise-btn" onclick="surpriseMe()">
+            🎲 Surprise Me
+        </button>
+    </header>
+
+    <main id="home">
+
+        <section class="hero">
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>🧠 Mind Games</h1>
+
+            <p>
+                Test your brain with puzzles, logic, riddles
+                and fun challenges!
+            </p>
+        </section>
+
+        <section class="games-section">
+
+            <h2>Choose Your Game</h2>
+
+            <div class="game-grid">
+
+                <button class="game-card" onclick="openGame('mindTrap')">
+                    <span class="game-icon">🧠</span>
+                    <span class="game-name">Mind Trap</span>
+                    <span class="game-description">
+                        Test your thinking
+                    </span>
+                </button>
+
+                <button class="game-card" onclick="openGame('findLie')">
+                    <span class="game-icon">🔍</span>
+                    <span class="game-name">Find the Lie</span>
+                    <span class="game-description">
+                        Find the false statement
+                    </span>
+                </button>
+
+                <button class="game-card" onclick="openGame('whatChanged')">
+                    <span class="game-icon">👀</span>
+                    <span class="game-name">What Changed?</span>
+                    <span class="game-description">
+                        Test your observation
+                    </span>
+                </button>
+
+                <button class="game-card" onclick="openGame('escapeRoom')">
+                    <span class="game-icon">🔐</span>
+                    <span class="game-name">Escape Room</span>
+                    <span class="game-description">
+                        Solve clues to escape
+                    </span>
+                </button>
+
+                <button class="game-card" onclick="openGame('impossible')">
+                    <span class="game-icon">🌀</span>
+                    <span class="game-name">Impossible</span>
+                    <span class="game-description">
+                        Tricky challenges
+                    </span>
+                </button>
+
+                <button class="game-card" onclick="openGame('funnyLogic')">
+                    <span class="game-icon">😂</span>
+                    <span class="game-name">Funny Logic</span>
+                    <span class="game-description">
+                        Logic with a twist
+                    </span>
+                </button>
+
+                <button class="game-card" onclick="openGame('paheli')">
+                    <span class="game-icon">🧩</span>
+                    <span class="game-name">Paheli</span>
+                    <span class="game-description">
+                        Solve interesting riddles
+                    </span>
+                </button>
+
+                <button class="game-card" onclick="openGame('ticTacToe')">
+                    <span class="game-icon">❌⭕</span>
+                    <span class="game-name">Tic-Tac-Toe</span>
+                    <span class="game-description">
+                        Play X and O
+                    </span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <section id="gameScreen" class="game-screen hidden">
+
+        <div class="game-header">
+
+            <button class="back-btn" onclick="goHome()">
+                ← Home
+            </button>
+
+            <h2 id="gameTitle">Game</h2>
+
+        </div>
+
+        <div id="gameContent" class="game-content"></div>
+
+    </section>
+
+    <footer>
+        <p>🧠 Think • 🎯 Play • 🏆 Win</p>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+
+</body>
+</html>
